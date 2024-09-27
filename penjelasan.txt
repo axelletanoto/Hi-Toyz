@@ -1,0 +1,92 @@
+Ini merupakan website HI-Toyz versi saya. 
+Berikut adalah penjelasan mengenai website yang telah dibuat.
+
+1. Bagian Home (index.html)
+
+    a. Tersedia header di bagian paling atas page yang posisinya sticky.
+        Tujuan adanya header adalah agar user dapat mudah bernavigasi pada website (Berpindah-pindah page).
+        Untuk responsive, user dapat menggunakan header dengan cara "click" hamburger menu, lalu muncul list page yang dapat dituju.
+
+
+    b. Pada section "isihome" terdapat sambutan dan juga deskripsi singkat mengenai website HI-Toyz.
+        Terdapat button juga yang dapat click untuk bernavigasi ke product page.
+        Tampilan background yang mempercantik tampilan.
+
+    c. Pada section "isihome2" terdapat featured product yang 
+        memperlihatkan product-product yang menarik perhatian para kolektor (user).
+
+    d. Setelah scroll ke paling bawah page, terdapat footer.
+        Footer disini berguna agar user mengetahui informasi mengenai kontak, tentang, sosial media website punya.
+
+
+
+2. Bagian Product (product.html)
+
+    a. Tersedia header di bagian paling atas page yang posisinya sticky.
+        Tujuan adanya header adalah agar user dapat mudah bernavigasi pada website (Berpindah-pindah page).
+        Untuk responsive, user dapat menggunakan header dengan cara "click" hamburger menu, lalu muncul list page yang dapat dituju.
+
+    b. Lalu, ada banner yang menunjukkan promo yang sedang ditawarkan website kepada user.
+
+    c. Terdapat daftar product-product yang terdiri dari gambar, merek, nama, rating, serta harga dari suatu product.
+        User dapat memilih dengan cara "click" product yang ingin dilihat/dibeli.
+    
+    d. Setelah scroll ke paling bawah page, terdapat footer.
+        Footer disini berguna agar user mengetahui informasi mengenai kontak, tentang, sosial media website punya.
+
+
+
+3. Bagian Gallery (gallery.html)
+
+    a. Tersedia header di bagian paling atas page yang posisinya sticky.
+        Tujuan adanya header adalah agar user dapat mudah bernavigasi pada website (Berpindah-pindah page).
+        Untuk responsive, user dapat menggunakan header dengan cara "click" hamburger menu, lalu muncul list page yang dapat dituju.
+
+    b. Lalu, ada banner yang menunjukkan judul gallery.
+
+    c. Dibawah banner, ada konten mengenai perjalanan HI-Toyz mulai dari tahun 2019 -  sekarang.
+        Terdapat gambar serta penjelasan yang menarik perhatian user.
+
+    d. Setelah scroll ke paling bawah page, terdapat footer.
+        Footer disini berguna agar user mengetahui informasi mengenai kontak, tentang, sosial media website punya.
+
+
+
+4. Bagian Event (event.html)
+
+    a. Tersedia header di bagian paling atas page yang posisinya sticky.
+        Tujuan adanya header adalah agar user dapat mudah bernavigasi pada website (Berpindah-pindah page).
+        Untuk responsive, user dapat menggunakan header dengan cara "click" hamburger menu, lalu muncul list page yang dapat dituju.
+
+    b. Konten yang tersedia di page ini adalah deretan event-event yang dapat dilihat/dipesan oleh user.
+        Terdapat gambar serta penjelasan singkat mengenai judul, lokasi, dan harga dari event tersebut.
+        Tapi setelah di "hover" muncul penjelasan yang lebih detail mengenai event tersebut.
+        Terdapat tombol "Book Now" di atas bagian penjelasan detail, yang digunakan untuk memesan/mengunjungi event tersebut.
+    
+    c. Setelah scroll ke paling bawah page, terdapat footer.
+        Footer disini berguna agar user mengetahui informasi mengenai kontak, tentang, sosial media website punya.
+
+
+
+5. Bagian Register (register.html)
+
+    a. User disuruh memasukkan data tentangnya, diantaranya nama lengkap, username, email, nomor telepon,
+        password, lalu confirm passwordnya, dan terakhir adalah memilih negara.
+
+    b. Tetapi ada validasi dimana:
+      - Karakter dari nama lengkap dan username yang diinput harus lebih dari 6. 
+      - Karakter dari email harus ada '@' dan '.', keduanya tidak boleh di awal dan di akhir kata.
+      - Karakter dari nomor telepon harus numeric.
+      - Kata dari password dan confirmPassword harus sama. Serta harus alphanumeric.
+      - Negara harus dipilih.
+      - Ketentuan diatas harus dipenuhi, apabila tidak akan ada pop-up alert bahwa belum terpenuhi/sesuai.
+    
+    c. Tombol submit untuk submit dan menuju ke home page.
+
+
+
+
+
+
+
+

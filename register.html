@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HI-Toyz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="body-reg">
+    <!-- <div class="container1">
+        <div class="form">
+            <div class="form-login">
+                <span class="title">Registration</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="email1" placeholder="Enter your email" required>
+                        <i class='bx bx-envelope icon'></i>
+                    </div>
+
+                    <div class="input-field">
+                        <select name="country" id="country1">
+                            <option value="">Choose your country</option>
+                            <option value="ina">Indonesia</option>
+                            <option value="malay">sad</option>
+                            <option value="singa">Choose your country</option>
+                        </select>
+                        <i class='bx bx-envelope icon'></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your birth date" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                        <i class='bx bx-calendar-alt'></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" id="password1" placeholder="Enter your password" required>
+                        <i class='bx bx-lock-alt icon'></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" id="confirmPassword1" placeholder="Enter your password" required>
+                        <i class='bx bx-lock-alt icon'></i>
+                        <i class='bx bx-low-vision showHidePw'></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" name="checkbox1" id="logCheck" required>
+                            <label for="logCheck" class="text">I agree to the terms and regulations</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+<div class="container1">
+    <div class="title">Registration</div>
+    <form action="" onsubmit="validateForm(event)" method="post">
+        <div class="user-details">
+            
+            <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" id="fullname1" placeholder="Enter your full name">
+            </div>
+
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" id="username1" placeholder="Enter your username">
+            </div>
+
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" id="email1" placeholder="Enter your email">
+            </div>
+
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" id="phoneNumber1" placeholder="Enter your phone number">
+            </div>
+
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" id="password1" placeholder="Enter your password">
+            </div>
+
+            <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="password" id="confirmPassword1" placeholder="Confirm your password">
+            </div>
+
+            <div class="input-box">
+                <div class="country-details">
+                    <span class="country-title">Country</span>
+                        <select name="country" id="country1">
+                            <option value="">Choose a country</option>
+                            <option value="ina">Indonesia</option>
+                            <option value="malay">Malaysia</option>
+                            <option value="singa">Singapore</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" id="buttonSub" value="Submit">
+
+            <p id="errorMessage" style="color: red;"></p>
+
+        </div>
+    </form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+    --main-color: #0E8388;
+    --sec-color: #2E4F4F;
+    --light-color: #CBE4DE;
+    --dark-color: #2C3333;
+    --yellow-color: rgb(243, 181, 25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--dark-color);
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 64px;
+    color: var(--dark-color);
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--dark-color);
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: var(--sec-color);
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+body {
+    width: 100%;
+}
+
+/* bagian header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: var(--dark-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 125px;
+    height: 125px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--light-color);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: var(--main-color);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* bagian home */ 
+#isihome {
+    background-image: url(assets/bghome.png);
+    background-position: top 25% right 20;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#isihome h2 {
+    color: var(--main-color);
+}
+
+#isihome p {
+    width: 500px;
+    text-align: justify;
+}
+
+#isihome button {
+    height: 7vh;
+    width: 500px;
+    outline: none;
+    color: var(--light-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: var(--main-color);
+}
+
+/* bagian home featured */
+#isihome2 {
+    text-align: center;
+}
+
+#isihome2 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#isihome2 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--light-color);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#isihome2 .pro:hover {
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
+}
+
+#isihome2 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#isihome2 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#isihome2 .pro .des span {
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+#isihome2 .pro .des h5 {
+    padding-top: 7px;
+    color: var(--dark-color);
+    font-size: 14px;
+}
+
+#isihome2 .pro .des i {
+    font-size: 12px;
+    color: var(--yellow-color);
+}
+
+#isihome2 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+/* bagian products page */
+#page-header {
+    background-image: url(assets/productpage/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: var(--main-color);
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* bagian gallery */
+#page-header.gallery-header {
+    background-image: url(assets/banner2real.png);
+}
+
+#gallery {
+    padding: 150px 150px 0 150px;
+}
+
+#gallery .gallery-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+#gallery .gallery-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#gallery .gallery-details {
+    width: 50%;
+}
+
+#gallery .gallery-box h1 {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--light-color);
+    z-index: -9;
+}
+
+/* bagian register */
+.body-reg {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+}
+
+.container1 {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container1 .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container1 .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: var(--main-color);
+}
+
+.container1 form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: var(--main-color);
+}
+
+select {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#buttonSub {
+    height: 7vh;
+    width: 100%;
+    outline: none;
+    color: var(--light-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: var(--main-color);
+}
+
+/* bagian event */
+/* .body-ev {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-cont {
+    position: relative;
+    margin: 24px;
+    width: 320px;
+    height: 570px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.img-cont,
+.body-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-cont img {
+    width: 100%;
+}
+
+.body-cont {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    background-color: rgba(28, 163, 152, 0.545);
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-cont:hover .overlay {
+    opacity: 1;
+    height: 150px;
+}
+
+.event-info {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.titleEvent,
+.price {
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 3px;
+}
+
+.info {
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.separator {
+    width: 20%;
+    height: 6px;
+    background-color: var(--main-color);
+    margin-bottom: 16px;
+}
+
+.additional-info {
+    border-top: 1px solid #bbb;
+    margin-top: 16px;
+    padding: 7px;
+    padding-bottom: 0;
+}
+
+.additional-info .info {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info i {
+    color: var(--main-color);
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
+.info span {
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.action {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+
+.item-cont:hover .action {
+    top: 50px;
+}
+
+.action:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+/* bagian footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: var(--dark-color);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: var(--main-color);
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/* Media */
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--dark-color);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 40px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: var(--light-color);
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: var(--light-color);
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #isihome {
+        height: 90vh;
+        padding: 0 100px;
+        background-position: top 30% right 30%;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 5px 30px;
+    }
+
+    #isihome {
+        padding: 0 20px;
+        background-position: 55% right;
+    }
+
+    #isihome h2 {
+        font-size: 20px;
+    }
+
+    #isihome h4 {
+        font-size: 15px;
+    }
+
+    #isihome p {
+        width: 150px;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    #isihome button {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    footer {
+        left: 40px;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+    /* bagian Gallery */
+    #gallery {
+        padding: 100px 20px 0 20px;
+    }
+
+    #gallery .gallery-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #gallery .gallery-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #gallery .gallery-details {
+        width: 100%;
+    }
+
+    /* register page */
+    .container1 {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+}
+
